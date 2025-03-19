@@ -1,12 +1,17 @@
 import {useState} from 'react'
+import proptype from 'prop-types'
+
+NavBar.propTypes = {
+    contactRef:proptype.object
+}
 
 export default function NavBar({contactRef}){
     const [openNav, setOpenNav] = useState(false);
 
     const accessLink = (e)=>{if(e.key === "Enter")e.target.click();}
-    const handleHomeNav = (e)=>{ window.location.hash = '/home'}
-    const handlePortfolioNav = (e)=>{window.location.hash = '/myPortfolio'}
-    const handleAboutNav = (e)=>{window.location.hash = '/aboutMe'}
+    const handleHomeNav = ()=>{ window.location.hash = '/home'}
+    const handlePortfolioNav = ()=>{window.location.hash = '/myPortfolio'}
+    const handleAboutNav = ()=>{window.location.hash = '/aboutMe'}
     const handleContactNav =(e)=>{
                                 accessLink(e);
                                 window.location.hash ='/home';
@@ -26,7 +31,7 @@ export default function NavBar({contactRef}){
 
                     <img alt="" onClick={()=>setOpenNav(true)} className="cursor-pointer lg:hidden" src="/images/icon-hamburger.svg"></img>
 
-                    <div className="hidden lg:block text-white text-lg font-inter space-x-[12%] *:cursor-pointer">
+                    <div className="hidden lg:flex text-white text-lg font-inter gap-x-[12%] *:cursor-pointer">
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/home' || window.location.hash === "" ? "text-sky-500"
                         : "text-white"} onClick={handleHomeNav}>Home</span>
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/myPortfolio' ? "text-sky-700" : "text-white"} 

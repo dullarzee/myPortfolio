@@ -1,7 +1,6 @@
 import {useEffect, useState} from 'react'
 import NavBar from "../components/navBar";
 import ProjectCard from "../components/projectCard";
-import {motion} from 'framer-motion'
 import Footer from '../components/footer';
 
 export default function PortfolioPage(){
@@ -24,7 +23,7 @@ export default function PortfolioPage(){
 
         }
         fetchIt();
-    },[]);
+    },[data]);
 
    const array = [];
     data.map(it=>{
@@ -39,7 +38,7 @@ export default function PortfolioPage(){
             <h1 className="text-center text-4xl lg:text-6xl text-slate-200 font-inter">My Portfolio</h1>
             <div className="p-[4%] px-[5%] lg:px-[10%] mt-[10%]">
                 <h2 className="text-xl lg:text-3xl text-gray-300 mb-7 font-bold font-inter">Featured Projects</h2>
-                <div className='flex flex-col space-y-[6.5rem] lg:space-y-[3%]'>
+                <div className='flex flex-col gap-y-[6.5rem] lg:gap-y-[3.5rem]'>
                     {array}
                 </div>
             </div>

@@ -1,4 +1,9 @@
 import {useState} from 'react'
+import proptype from 'prop-types'
+
+Contact1.propTypes = {
+    textColor:proptype.string
+}
 
 export function Contact1({textColor}){
     return(
@@ -60,7 +65,7 @@ export function ContactForm(){
             <form>
                 <h3 className="font-inter text-3xl text-slate-300 text-center mb-8">Get in touch</h3>
                 <section className="grid max-md:grid-cols-1 lg:grid-cols-2">
-                    <div className="space-y-[5%] text-slate-200">
+                    <div className="flex flex-col gap-y-[1.5rem] text-slate-200">
                         <label className="flex flex-col space-y-[0.3rem]">
                             <span className="font-karla text-white">Name</span>
                             <input onChange={handleName} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[1.9rem] rounded-md pl-3"></input>
@@ -77,7 +82,7 @@ export function ContactForm(){
                     </div>
 
                     <div className="p-7 flex items-center" >
-                        <span className="text-slate-300 text-4xl">I'd love to hear from you! be it a question or just want to say hi, feel free to drop a message.</span>
+                        <span className="text-slate-300 text-4xl">I&apos;d love to hear from you! be it a question or just want to say hi, feel free to drop a message.</span>
                     </div>
                 </section>
             </form>

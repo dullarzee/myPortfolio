@@ -2,7 +2,6 @@ import { Contact1 } from "../components/contact";
 import Footer from "../components/footer";
 import NavBar from "../components/navBar";
 import nft from '/images/image-equilibrium.jpg'
-import {motion} from 'framer-motion'
 
 export default function AboutMe(){
     return(
@@ -43,17 +42,17 @@ export default function AboutMe(){
             <Contact1 textColor={'oklch(0.446 0.043 257.281)'}/>
 
             <section className="grid grid-cols-1 lg:grid-cols-2 mt-[10%] w-full lg:w-[80%] p-[4%] lg:rounded-e-full bg-indigo-500 inset-shadow-big">
-                <div className="flex flex-col space-y-[10%]">
-                    <div className="space-y-[3.5%]">
-                        <h2 className="text-white text-3xl font-semibold italic">Education
+                <div className="flex flex-col gap-y-[2rem]">
+                    <div className="">
+                        <h2 className="text-white text-3xl font-semibold italic mb-[0.7rem]">Education
                             <span className="inline-block border border-white text-base font-normal rounded-full px-4 py-1 ml-5">2014 - 2020</span>
                         </h2>
                         <span className="text-gray-300 font-karla">Federal Science and Technical College</span>
                     </div>
 
-                    <div className="space-y-[3.5%]">
+                    <div className="flex flex-col gap-y-[0.8rem]">
                         <h2 className="text-white text-3xl font-semibold italic">Technical Skill</h2>
-                        <div className="grid grid-cols-3 lg:w-[50%] space-y-2 *:h-[4rem]">
+                        <div className="grid grid-cols-3 gap-[0.5rem] lg:w-[50%] *:h-[4rem]">
                             <img alt="" className="w-[60%]" src="/images/react.svg"></img>
                             <span className="flex col-span-2 text-white bg-sky-500 text-2xl rounded-md
                             text-center items-center justify-center sm:max-lg:w-[50%]">Tailwindcss</span>
@@ -62,7 +61,7 @@ export default function AboutMe(){
                         </div>
                     </div>
 
-                    <div className="space-y-[3.5%]">
+                    <div className="flex flex-col gap-y-[1rem]">
                         <h2 className=" text-white text-3xl font-semibold italic">Soft Skill</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 w-[80%] text-gray-300 ">
                             <div className="flex flex-col lg:border-r lg:border-r-white">
@@ -77,8 +76,8 @@ export default function AboutMe(){
                     </div>
                 </div>
 
-                <div className="flex flex-col space-y-[10%]" >
-                    <div className="space-y-[3.5%]">
+                <div className="flex flex-col">
+                    <div className="">
                         <h2 className=" text-white text-3xl font-semibold italic">Skill Set</h2>
                         <div className="grid grid-cols-1 lg:grid-cols-2 w-[80%] text-gray-300 ">
                             <div className="flex flex-col lg:border-r lg:border-r-white">
@@ -92,7 +91,7 @@ export default function AboutMe(){
                         </div>
                     </div>
                     
-                    <div className="space-y-[3.5%]">
+                    <div className="*:mt-[1.5%] *:mb-[1.5%]">
                         <h2 className="text-white text-3xl font-semibold italic">Language</h2>
                         <div className="grid grid-cols-2 w-[80%] text-gray-300 ">
                             <div className="flex flex-col border-r border-r-white">
