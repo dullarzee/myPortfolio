@@ -31,12 +31,12 @@ export default function NavBar({contactRef}){
 
                     <img alt="" onClick={()=>setOpenNav(true)} className="cursor-pointer lg:hidden" src="/images/icon-hamburger.svg"></img>
 
-                    <div className="hidden lg:flex text-white text-lg font-inter gap-x-[12%] *:cursor-pointer">
-                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/home' || window.location.hash === "" ? "text-sky-500"
-                        : "text-white"} onClick={handleHomeNav}>Home</span>
-                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/myPortfolio' ? "text-sky-700" : "text-white"} 
+                    <div className="hidden lg:flex text-white text-lg font-inter gap-x-[12%]">
+                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/home' || window.location.hash === "" ? "text-sky-500 cursor-pointer"
+                        : "text-white cursor-pointer"} onClick={handleHomeNav}>Home</span>
+                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/myPortfolio' ? "text-sky-700 cursor-pointer" : "text-white cursor-pointer"} 
                         onClick={handlePortfolioNav}>Portfolio</span>
-                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/aboutMe' ? "text-sky-500" : "text-white"}
+                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/aboutMe' ? "text-sky-500 cursor-pointer" : "text-white cursor-pointer"}
                          onClick={handleAboutNav}>About</span>
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className="navItem" onClick={handleContactNav}>Contact</span>
                     </div>
@@ -48,11 +48,11 @@ export default function NavBar({contactRef}){
                         <img onClick={()=>setOpenNav(false)} alt="" className="relative top-[5%] left-[85%]" src="/images/icon-close.svg"></img>
                         <ul className="space-y-[2rem] mt-[5rem] *:cursor-pointer">
                             <li onClick={handleHomeNav} className={window.location.hash === '#/home' || window.location.hash === "" ? 
-                            "text-sky-500 text-xl text-bold" : "text-slate-700 text-xl font-inter" }>Home</li>
+                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer" }>Home</li>
                             <li onClick={handlePortfolioNav} className={window.location.hash === '#/myPortfolio' ? 
-                            "text-sky-500 text-xl text-bold" : "text-slate-700 text-xl font-inter"}>Portfolio</li>
+                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer"}>Portfolio</li>
                             <li onClick={handleAboutNav} className={window.location.hash === '#/aboutMe' ? 
-                            "text-sky-500 text-xl text-bold" : "text-slate-700 text-xl font-inter"}>About</li>
+                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer"}>About</li>
                             <li onClick={handleContactNav} className={window.location.hash === '#/contact' ? 
                             "text-sky-500 text-xl text-bold" : "text-slate-700 text-xl font-inter"}>Contact</li>
                         </ul>
