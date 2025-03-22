@@ -7,16 +7,22 @@ NavBar.propTypes = {
 
 export default function NavBar({contactRef}){
     const [openNav, setOpenNav] = useState(false);
+    const [showHint, setShowHint] = useState(false);
 
     const accessLink = (e)=>{if(e.key === "Enter")e.target.click();}
     const handleHomeNav = ()=>{ window.location.hash = '/home'}
     const handlePortfolioNav = ()=>{window.location.hash = '/myPortfolio'}
     const handleAboutNav = ()=>{window.location.hash = '/aboutMe'}
-    const handleContactNav =(e)=>{
+    const handleContactNav = (e)=>{
                                 accessLink(e);
-                                window.location.hash ='/home';
+                                if(window.location.hash !== '#/home'){
+                                    window.location.hash ='/home';
+                                    setTimeout(()=>setShowHint(true),1000);
+                                    setTimeout(()=>setShowHint(false),4000)
+                                }
+                                
                                 setOpenNav(false);
-                                setTimeout(()=>contactRef.current.scrollIntoView({'block':'start'}),200)
+                                contactRef.current.scrollIntoView({'block':'start'})
                             }
     return(
         <>
@@ -31,33 +37,35 @@ export default function NavBar({contactRef}){
 
                     <img alt="" onClick={()=>setOpenNav(true)} className="cursor-pointer lg:hidden" src="/images/icon-hamburger.svg"></img>
 
-                    <div className="hidden lg:flex text-white text-lg font-inter gap-x-[12%]">
+                    <div className="hidden lg:flex text-white text-lg font-inter gap-x-[12%] **:hover:text-sky-200">
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/home' || window.location.hash === "" ? "text-sky-500 cursor-pointer"
                         : "text-white cursor-pointer"} onClick={handleHomeNav}>Home</span>
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/myPortfolio' ? "text-sky-700 cursor-pointer" : "text-white cursor-pointer"} 
                         onClick={handlePortfolioNav}>Portfolio</span>
                         <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className={window.location.hash === '#/aboutMe' ? "text-sky-500 cursor-pointer" : "text-white cursor-pointer"}
                          onClick={handleAboutNav}>About</span>
-                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className="navItem" onClick={handleContactNav}>Contact</span>
+                        <span tabIndex={0} onKeyUp={(e)=>accessLink(e)} className="navItem cursor-pointer" onClick={handleContactNav}>Contact</span>
                     </div>
                 </nav>
 
                 {openNav && <nav>
                     <div onClick={()=>setOpenNav(false)} className="fixed h-[100vh] w-[100vw] bg-black/50 z-20 top-0"></div>
-                    <div className="fixed top-0 w-[65%] h-[100vh] left-[35%] bg-slate-100 z-30 pl-[4%]">
+                    <div className="fixed top-0 w-[65%] h-[100vh] left-[35%] bg-slate-100 z-30 pl-[4%] starting:translate-x-[10rem] duration-400">
                         <img onClick={()=>setOpenNav(false)} alt="" className="relative top-[5%] left-[85%]" src="/images/icon-close.svg"></img>
-                        <ul className="space-y-[2rem] mt-[5rem] *:cursor-pointer">
+                        <ul className="flex flex-col gap-y-[2rem] mt-[5rem] *:cursor-pointer">
                             <li onClick={handleHomeNav} className={window.location.hash === '#/home' || window.location.hash === "" ? 
-                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer" }>Home</li>
+                            "text-sky-500 text-2xl text-bold cursor-pointer border-r-4 border-sky-500" : "text-slate-700 text-lg font-inter cursor-pointer" }>Home</li>
                             <li onClick={handlePortfolioNav} className={window.location.hash === '#/myPortfolio' ? 
-                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer"}>Portfolio</li>
+                            "text-sky-500 text-2xl text-bold cursor-pointer border-r-4 border-sky-500" : "text-slate-700 text-lg font-inter cursor-pointer"}>Portfolio</li>
                             <li onClick={handleAboutNav} className={window.location.hash === '#/aboutMe' ? 
-                            "text-sky-500 text-xl text-bold cursor-pointer" : "text-slate-700 text-xl font-inter cursor-pointer"}>About</li>
-                            <li onClick={handleContactNav} className={window.location.hash === '#/contact' ? 
-                            "text-sky-500 text-xl text-bold" : "text-slate-700 text-xl font-inter"}>Contact</li>
+                            "text-sky-500 text-2xl text-bold cursor-pointer border-r-4 border-sky-500" : "text-slate-700 text-lg font-inter cursor-pointer"}>About</li>
+                            <li onClick={handleContactNav} className="text-slate-700 text-lg font-inter">Contact</li>
                         </ul>
                     </div>
                 </nav>}
+
+                {showHint && <div className='animate-dropIn fixed top-[5rem] w-[20%] left-[40%] right-[40%] bg-white px-7 py-2 font-inter text-slate-500
+                text-center rounded-md'>Please click <span className="text-sky-500">Contact</span> button again</div>}
 
          </div>
         </>

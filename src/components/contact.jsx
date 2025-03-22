@@ -68,21 +68,25 @@ export function ContactForm(){
                     <div className="flex flex-col gap-y-[1.5rem] text-slate-200">
                         <label className="flex flex-col space-y-[0.3rem]">
                             <span className="font-karla text-white">Name</span>
-                            <input onChange={handleName} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[1.9rem] rounded-md pl-3"></input>
+                            <input value={form.name} onChange={handleName} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[1.9rem] rounded-md pl-3"></input>
                         </label>
                         <label className="flex flex-col space-y-[0.3rem]">
                             <span className="font-karla text-white">Email</span>
-                            <input onChange={handleEmail} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[3rem] rounded-md pl-3"></input>
+                            <input value={form.email} onChange={handleEmail} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[3rem] rounded-md pl-3"></input>
                         </label>
                         <label className="flex flex-col space-y-[0.3rem]">
                             <span className="font-karla text-white">Message</span>
-                            <textarea onChange={handleMessage} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[5rem] rounded-md pl-3"></textarea>
+                            <textarea value={form.message} onChange={handleMessage} className="focus:outline-sky-500 focus:outline-3 outline-2 outline-slate-300 h-[5rem] rounded-md pl-3"></textarea>
                         </label>
-                        <button className="inline-flex w-full py-2 bg-sky-500 hover:bg-sky-300 cursor-pointer text-white font-semibold font-inter rounded-md mt-6 justify-center">Send <img alt="" src=""></img></button>
+                        <button className="inline-flex w-full py-2 bg-sky-500 hover:bg-sky-300 cursor-pointer text-white font-semibold font-inter rounded-md mt-6 justify-center">Send 
+                            <svg className='fill-white ml-1' version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M22.963 2.269c0.043-0.151 0.050-0.314 0.015-0.476-0.024-0.113-0.068-0.224-0.131-0.325-0.064-0.102-0.145-0.19-0.238-0.262-0.117-0.090-0.249-0.15-0.386-0.181s-0.282-0.034-0.426-0.004c-0.042 0.009-0.085 0.021-0.126 0.035l-0.021 0.007-19.98 6.993c-0.252 0.088-0.467 0.276-0.584 0.538-0.224 0.505 0.003 1.096 0.508 1.32l8.649 3.844 3.844 8.649c0.108 0.243 0.313 0.443 0.583 0.538 0.521 0.182 1.092-0.092 1.274-0.614l6.993-19.979c0.010-0.027 0.019-0.054 0.027-0.082zM10.779 11.807l-6.068-2.696 13.483-4.72zM19.609 5.806l-4.72 13.483-2.696-6.068z"></path>
+                            </svg>
+                        </button>
                     </div>
 
-                    <div className="p-7 flex items-center" >
-                        <span className="text-slate-300 text-4xl">I&apos;d love to hear from you! be it a question or just want to say hi, feel free to drop a message.</span>
+                    <div className="p-7" >
+                        <div className="text-slate-300 text-2xl lg:text-4xl rounded-lg p-7 bg-blue-500 border-t-3 border-white">I&apos;d love to hear from you! be it a question or just want to say hi, feel free to drop a message.</div>
                     </div>
                 </section>
             </form>

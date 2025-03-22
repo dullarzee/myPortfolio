@@ -6,4 +6,21 @@
     --shadow-button:0px 0px 10px oklch(0.901 0.058 230.902);
     --inset-shadow-big:inset 0px 0px 20px rgba(0, 0, 0, 0.6);
     --breakpoint-smm:28rem; 
+
+    --animate-dropIn: dropIn 4s ease-out;
+
+
+    @keyframes dropIn {
+        25% {
+            top: 3rem;
+        }
+
+        80% {
+            top: 3rem;
+        }
+
+        100% {
+            top: -8rem;
+        }
+    }
 }
