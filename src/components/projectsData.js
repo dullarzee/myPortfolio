@@ -11,7 +11,8 @@
         "heading": "Countries of the World",
         "type": "Website",
         "description": "With the help of the rest countries API, I have built a simple yet helpful Web App that gives you all the details you'll ever need for the countries of the world.Also, my first React project",
-        "tools": ["React", "Tailwindcss", "Vite", "HTML"]
+        "tools":["react","tailwindcss","vite"]
+
     },
     {
         "mainImage": "/images/planCinema/homepage.jpg",
@@ -23,7 +24,7 @@
         "heading": "Plan Cinema",
         "type": "Website",
         "description": "For all movie lovers, Here is a site that satiates your inquenchable hunger for movies from hollywood blockbusters to animations...It's all here for free download...This also marks my second React project",
-        "tools": ["React", "Tailwindcss", "Vite"]
+        "tools":["react","tailwindcss","vite"]
     },
     {
         "mainImage": "/images/moniepoint/main.png",
@@ -37,20 +38,20 @@
         "heading": "Moniepoint Clone",
         "type": "Website",
         "description": "this is a look-alike of the giant corporation, Moniepoint...Browse through and play 'spot the differences' while you marvel at the similarities.",
-        "tools": ["React", "Tailwindcss", "Vite"]
+        "tools":["react","tailwindcss","vite"]
     },
     {
         "mainImage": "/images/stephaniePortfolio/main.png",
         "images": [
             "/images/stephaniePortfolio/main.png",
             "/images/stephaniePortfolio/side1.png",
-            "/images/stephaniePortfolio/side2.png"
+            "/images/stephaniePortfolio/side2.png",
         ],
         "link": "https://moniepoint-clone04.netlify.app",
         "heading": "Stephanie's Portfolio",
         "type": "Website",
         "description": "This was a collaboration with a senior dev where a client's project was involved...It was built using Next.js, a fullstack react framework.",
-        "tools": ["Next.js", "Tailwindcss", "React", "Typescript"]
+        "tools":["react","tailwindcss","Next.js"]
     },
     {
         "mainImage": "/images/rockPaperScissors/desktop-step-1.jpg",
@@ -64,7 +65,7 @@
         "heading": "Rock Paper Scissors",
         "type": "Website-Game",
         "description": "This simple yet interesting game cant help but pique your interest, compete with the computer while you keep track of your score...It doesnt have a multiplayer mode unless i feel the need to add it later",
-        "tools": ["React", "Tailwindcss", "Vite", "HTML"]
+        "tools":["react","tailwindcss","vite"]
     },
     {
         "mainImage": "/images/travelToSpace/home.png",
@@ -73,7 +74,7 @@
         "heading": "Travel to Space",
         "type": "Website",
         "description": "Traveling to space have become a lot easier..pack ur bags & boots as you explore the boundaries of space...Built with vanilla javascript and Tailwindcss",
-        "tools": ["HTML", "Tailwindcss", "Javascript"]
+        "tools":["tailwindcss", "vanilla javascript"]
     },
     {
         "mainImage": "/images/bookmarkPage/desktop-preview.jpg",
@@ -86,7 +87,7 @@
         "heading": "Bookmark Landing Page",
         "type": "Website",
         "description": "A frontend mentor project",
-        "tools": ["HTML", "Javascript", "CSS"]
+        "tools":["vanilla css", "vanilla javascript"]
     },
     {
         "mainImage": "/images/todo/desktop-preview.jpg",
@@ -99,6 +100,6 @@
         "heading": "Todo App",
         "type": "Website",
         "description": "A classic todo app with light and dark mode toggle, built with vanilla css and javascript.",
-        "tools": ["HTML", "Javascript", "CSS"]
+        "tools":["vanillacss", "vanilla javascript"]
     }
 ]

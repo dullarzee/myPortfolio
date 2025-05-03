@@ -19,7 +19,7 @@ export default function AboutMe(){
                     </div>
                     <p className="px-[5%] lg:px-[15%] text-slate-800 font-karla">
                         Hi!<br/>
-                        My name is <span className="text-sky-500 font-semibold">Adefila oluwatimilehin samuel</span>.<hbr />
+                        My name is <span className="text-sky-500 font-semibold">Adefila oluwatimilehin samuel</span>.
                         I am an <span className="text-slate-400 font-bold">intermediate frontend developer </span> 
                          adept with <span className="font-semibold text-indigo-500">React, Next.js</span>, about to learn
                          React Native at the time of creating this article and an aspiring full stack developer.
