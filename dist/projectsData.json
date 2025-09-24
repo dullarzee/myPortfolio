@@ -1,0 +1,126 @@
+[
+    {
+        "mainImage": "/images/teazyTech/teazy-tech.vercel.app_.png",
+        "images": [
+            "/images/teazyTech/teazy-tech.vercel.app_.png",
+            "/images/teazyTech/teazy-tech.vercel.app_ (1).png",
+            "/images/teazyTech/teazy-tech.vercel.app_ (2).png"
+        ],
+        "link": "https://teazy-tech-test.vercel.app",
+        "heading": "Teazy Tech",
+        "type": "Website",
+        "description": "This Website that includes an admin dashboard for posting and tracking blog posts was built in collaboration with one frontend and one backend Dev...",
+        "tools": ["React", "Tailwindcss", "Vite"],
+        "github": "https://github.com/dullarzee/teazyTechTest"
+    },
+    {
+        "mainImage": "/images/restCountriesProject/desktop-design-home-light.jpg",
+        "images": [
+            "/images/restCountriesProject/desktop-design-home-light.jpg",
+            "/images/restCountriesProject/desktop-design-home-dark.jpg",
+            "/images/restCountriesProject/desktop-design-detail-light.jpg",
+            "/images/restCountriesProject/desktop-design-detail-dark.jpg"
+        ],
+        "link": "https://countries-of-the-world03.netlify.app",
+        "heading": "Countries of the World",
+        "type": "Website",
+        "description": "With the help of the rest countries API, I have built a simple yet helpful Web App that gives you all the details you'll ever need for the countries of the world.Also, my first React project",
+        "tools": ["React", "Tailwindcss", "Vite", "HTML"],
+        "github": "https://github.com/dullarzee/REST-country-Api-Project"
+    },
+    {
+        "mainImage": "/images/moniepoint/main.png",
+        "images": [
+            "/images/moniepoint/main.png",
+            "/images/moniepoint/side1.png",
+            "/images/moniepoint/side2.png",
+            "/images/moniepoint/side3.png"
+        ],
+        "link": "https://moniepoint-clone04.netlify.app",
+        "heading": "Moniepoint Clone",
+        "type": "Website",
+        "description": "this is a look-alike of the giant corporation, Moniepoint...Browse through and play 'spot the differences' while you marvel at the similarities.",
+        "tools": ["React", "Tailwindcss", "Vite"],
+        "github": "https://github.com/dullarzee/Moniepoint-Clone"
+    },
+    {
+        "mainImage": "/images/planCinema/homepage.jpg",
+        "images": [
+            "/images/planCinema/homepage.jpg",
+            "/images/planCinema/searchBar.jpg"
+        ],
+        "link": "https://plan-cinema.netlify.app",
+        "heading": "Plan Cinema",
+        "type": "Website",
+        "description": "For all movie lovers, Here is a site that satiates your inquenchable hunger for movies from hollywood blockbusters to animations...It's all here for free download...This also marks my second React project",
+        "tools": ["React", "Tailwindcss", "Vite"],
+        "github": "https://github.com/dullarzee/PlanCinema"
+    },
+    {
+        "mainImage": "/images/stephaniePortfolio/main.png",
+        "images": [
+            "/images/stephaniePortfolio/main.png",
+            "/images/stephaniePortfolio/side1.png",
+            "/images/stephaniePortfolio/side2.png"
+        ],
+        "link": "https://stephaniee.netlify.app",
+        "heading": "Stephanie's Portfolio",
+        "type": "Website",
+        "description": "This was a collaboration with a senior dev where a client's project was involved...It was built using Next.js, a fullstack react framework.",
+        "tools": ["Next.js", "Tailwindcss", "React", "Typescript"],
+        "github": "https://github.com/dullarzee/stephanie-portfolio"
+    },
+    {
+        "mainImage": "/images/rockPaperScissors/desktop-step-1.jpg",
+        "images": [
+            "/images/rockPaperScissors/desktop-step-1.jpg",
+            "/images/rockPaperScissors/desktop-step-4-lose.jpg",
+            "/images/rockPaperScissors/desktop-step-1-bonus.jpg",
+            "/images/rockPaperScissors/desktop-step-3-bonus.jpg"
+        ],
+        "link": "https://rock-paper-scissors-and-bonuss.netlify.app",
+        "heading": "Rock Paper Scissors",
+        "type": "Website-Game",
+        "description": "This simple yet interesting game cant help but pique your interest, compete with the computer while you keep track of your score...It doesnt have a multiplayer mode unless i feel the need to add it later",
+        "tools": ["React", "Tailwindcss", "Vite", "HTML"],
+        "github": "https://github.com/dullarzee/Rock-Paper-Scissors-and-Bonus"
+    },
+    {
+        "mainImage": "/images/travelToSpace/home.png",
+        "images": ["/images/travelToSpace/home.png"],
+        "link": "https://travel-to-space04.netlify.app",
+        "heading": "Travel to Space",
+        "type": "Website",
+        "description": "Traveling to space have become a lot easier..pack ur bags & boots as you explore the boundaries of space...Built with vanilla javascript and Tailwindcss",
+        "tools": ["HTML", "Tailwindcss", "Javascript"],
+        "github": "https://github.com/dullarzee/travelToSpace"
+    },
+    {
+        "mainImage": "/images/bookmarkPage/desktop-preview.jpg",
+        "images": [
+            "/images/bookmarkPage/desktop-preview.jpg",
+            "/images/bookmarkPage/tab-2-design.jpg",
+            "/bookmarkPage/tab-3-design.jpg"
+        ],
+        "link": "https://bookmark04.netlify.app",
+        "heading": "Bookmark Landing Page",
+        "type": "Website",
+        "description": "A frontend mentor project",
+        "tools": ["HTML", "Javascript", "CSS"],
+        "github": "https://github.com/dullarzee/bookmarkCompany"
+    },
+    {
+        "mainImage": "/images/todo/desktop-preview.jpg",
+        "images": [
+            "/images/todo/desktop-preview.jpg",
+            "/images/todo/desktop-design-light.jpg",
+            "/images/todo/desktop-design-dark.jpg"
+        ],
+        "link": "https://dullarzee.github.io",
+        "heading": "Todo App",
+        "type": "Website",
+        "description": "A classic todo app with light and dark mode toggle, built with vanilla css and javascript.",
+        "tools": ["HTML", "Javascript", "CSS"],
+        "github": "https://github.com/dullarzee/todoApp"
+    }
+]
