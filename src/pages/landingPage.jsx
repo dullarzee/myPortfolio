@@ -1,23 +1,26 @@
-import { Contact1, ContactForm } from "../components/contact";
+import { Contact1 } from "../components/contact";
 import DownloadCv from "../components/downloadCv";
 import Footer from "../components/footer";
 import NavBar from "../components/navBar";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import ContactForm from "../components/contactForm";
 
 export default function LandingPage() {
     const contactRef = useRef(null);
     return (
         <>
-            <div className="bg-gradient-to-br from-blue-950 to-blue-500">
-                <div className="min-h-[100vh] bg-[url(/images/pattern-lines.svg),url(/images/pattern-circle.svg)] bg-[85%,20%,auto,auto] bg-no-repeat">
+            <div className="bg-gradient-to-br from-blue-950 to-blue-500 pt-[6rem]">
+                <div className="relative min-h-[100vh] overflow-hidden bg-[url(/images/pattern-lines.svg),url(/images/pattern-circle.svg)] bg-[85%,20%,auto,auto] bg-no-repeat">
+                    {/*an absolutely positioned div for aesthetic*/}
+                    <div className="absolute md:-top-10 -right-[6rem] w-60 h-60 rotate-45 md:right-10 bg-blue-700 blur-lg" />
                     <NavBar contactRef={contactRef} />
                     <section
                         className="relative grid grid-cols-1 lg:grid-cols-2 space-y-[5rem] lg:space-y-0 w-[85%] 
                 mx-auto mt-[3%]"
                     >
                         <div className="pt-[15%]">
-                            <h1 className="text-sky-600 text-xl font-semibold">
+                            <h1 className="text-sky-500 text-xl font-semibold">
                                 Welcome to my Portfolio!
                             </h1>
                             <h2 className="text-7xl font-inter font-semibold text-white leading-[120%] my-[1rem]">
@@ -30,8 +33,8 @@ export default function LandingPage() {
                                 Lagos, Nigeria
                             </p>
 
-                            <div className="flex flex-col lg:flex-row gap-y-[1rem] lg:gap-y-0 lg:gap-x-[5%] mt-[6%]">
-                                <div className="self-center">
+                            <div className="flex flex-col lg:flex-row gap-y-[1rem] lg:gap-y-0 lg:gap-x-[5%] mt-[4rem]">
+                                <div className="w-full">
                                     <DownloadCv />
                                 </div>
                                 <button className="">
@@ -160,7 +163,7 @@ export default function LandingPage() {
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="bg-blue-800 p-[7%]"
+                            className="bg-blue-800 p-[7%] border-3 border-blue-600"
                         >
                             <div className="flex flex-col space-y-[0.5rem]">
                                 <svg
@@ -188,7 +191,7 @@ export default function LandingPage() {
                             initial={{ opacity: 0, y: 70 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.9 }}
-                            className="bg-blue-800 p-[7%]"
+                            className="bg-blue-800 p-[7%] border-3 border-blue-600"
                         >
                             <div className="flex flex-col space-y-[0.5rem]">
                                 <svg
@@ -215,7 +218,7 @@ export default function LandingPage() {
                             initial={{ opacity: 0, y: 90 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.1 }}
-                            className="bg-blue-800 p-[7%]"
+                            className="bg-blue-800 p-[7%] border-3 border-blue-600"
                         >
                             <div className="flex flex-col space-y-[0.5rem]">
                                 <svg

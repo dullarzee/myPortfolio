@@ -32,6 +32,7 @@ export default function PortfolioPage() {
                 description={it.description}
                 images={it.images}
                 tools={it.tools}
+                github={it.github}
             />
         );
     });
@@ -39,7 +40,7 @@ export default function PortfolioPage() {
         <>
             <div className="bg-gradient-to-bl from-blue-400 to-blue-900 min-h-[100vh] pb-[20%]">
                 <NavBar />
-                <h1 className="text-center text-4xl lg:text-6xl text-slate-200 font-inter">
+                <h1 className="text-center pt-[6rem] text-4xl lg:text-6xl text-slate-200 font-inter">
                     My Portfolio
                 </h1>
                 <div className="p-[4%] px-[5%] lg:px-[10%] mt-[10%]">
